@@ -10,9 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class DemoQAPage {
+public class BasePage {
 	WebDriver driver;
-	public DemoQAPage(WebDriver driver) {
+	public BasePage(WebDriver driver) {
 	   this.driver=driver;
 	   PageFactory.initElements(driver, this);
 	}
@@ -21,8 +21,8 @@ public class DemoQAPage {
 	WebElement elementtab;
 	
 	public ElementsPage clickonElementSection() {
-		WebDriverWait wt= new WebDriverWait(driver, Duration.ofSeconds(10));
-		wt.until(ExpectedConditions.visibilityOfElementLocated((By) elementtab)).click();
+		WebDriverWait wt= new WebDriverWait(driver, Duration.ofSeconds(20));
+		wt.until(ExpectedConditions.elementToBeClickable(elementtab)).click();
 		ElementsPage elementpage=new ElementsPage(driver);
 		return elementpage;
 	}

@@ -3,22 +3,23 @@ package OpenQA.testcases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import qaWebElement.pageobjects.DemoQAPage;
+import qaWebElement.pageobjects.BasePage;
 
 public class BaseTest {
 	
 	WebDriver driver;
 	
-	public WebDriver initializeDriver(){	
+	public WebDriver initializeDriver()
+	{	
 	      driver = new ChromeDriver();
-	
-	return driver;
+	      return driver;
 }
-	public DemoQAPage LaunchApplication() {
+	public BasePage LaunchApplication() {
 		driver=initializeDriver();
-		DemoQAPage demoqapage= new DemoQAPage(driver);
-		demoqapage.openURL();
-		return demoqapage;
+		driver.manage().window().maximize();
+		BasePage basepage= new BasePage(driver);
+		basepage.openURL();
+		return basepage;
 	}
 	
 

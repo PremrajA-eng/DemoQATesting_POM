@@ -14,12 +14,19 @@ public class ElementsPage {
 }
    @FindBy(xpath="//div[contains(text(),'Please select an item from left to start practice.')]")
    WebElement Actualtext;
+   @FindBy(xpath="//span[normalize-space()='Text Box']")
+   WebElement textBox;
    
    public String confirmYouLaunchOnElementPage() {
 	  // String actual_Text = driver.findElement(By.xpath("//div[contains(text(),'Please select an item from left to start practice.')]")).getText();	
          String actual_Tect=Actualtext.getText();
 	   return actual_Tect;
           
+   }
+   public TextBoxPage checkTextBoxElement() {
+	   textBox.click();
+	   TextBoxPage txtbox= new TextBoxPage(driver);
+	   return txtbox;
    }
    
    
