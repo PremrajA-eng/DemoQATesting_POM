@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="OpenQA.testcases.TextBoxTest">
+      <class name="OpenQA.testcases.TextBoxTest2">
         <methods>
+          <include name="closeBrowser"/>
+          <include name="LaunchApplication"/>
           <include name="confJumponTextBoxPage"/>
         </methods>
-      </class> <!-- OpenQA.testcases.TextBoxTest -->
+      </class> <!-- OpenQA.testcases.TextBoxTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,7 +10,8 @@ import qaWebElement.pageobjects.TextBoxPage;
 public class TextBoxTest extends BaseTest {
 	@Test
 	public void confJumponTextBoxPage() {
-		BasePage basepage=LaunchApplication();
+		//BasePage basepage=LaunchApplication();
+		LaunchApplication();		
 		ElementsPage elementpage=basepage.clickonElementSection();
 		TextBoxPage textboxpage=elementpage.checkTextBoxElement();
 	    String actualtext_textbox=textboxpage.confirmTextBoxPage();

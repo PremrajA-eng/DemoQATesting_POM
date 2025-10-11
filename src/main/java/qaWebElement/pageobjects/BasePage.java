@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
+	BasePage basepage;
 	WebDriver driver;
 	public BasePage(WebDriver driver) {
 	   this.driver=driver;
@@ -28,8 +29,11 @@ public class BasePage {
 	}
 	
 	
+	
 	public void openURL() {
 		driver.get("https://demoqa.com/");
 	}
+	
+	
 
 }
