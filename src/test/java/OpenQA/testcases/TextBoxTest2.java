@@ -19,6 +19,7 @@ public class TextBoxTest2 extends BaseTest {
 	    textboxpage.fillUserDetail();
 	    Thread.sleep(2000);
 	    Assert.assertTrue(textboxpage.confirmFillDetailSubmitted());
+	    
 	    	    
 	}
 

@@ -32,8 +32,7 @@ public class TextBoxPage extends BasePage{
 	   
 	   @FindBy(xpath = "//p[@id='name']")
 	   WebElement submitName;
-	   
-	   
+	      
 	   
 	   public String confirmTextBoxPage() {
 		   String actualtext_textbox=conftxtboxpage.getText();

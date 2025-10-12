@@ -20,8 +20,7 @@ public class ElementsPage {
    public String confirmYouLaunchOnElementPage() {
 	  // String actual_Text = driver.findElement(By.xpath("//div[contains(text(),'Please select an item from left to start practice.')]")).getText();	
          String actual_Tect=Actualtext.getText();
-	   return actual_Tect;
-          
+	   return actual_Tect;         
    }
    public TextBoxPage checkTextBoxElement() {
 	   textBox.click();

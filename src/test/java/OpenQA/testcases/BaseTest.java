@@ -16,6 +16,7 @@ public class BaseTest {
 	      return driver;
 } 
 	
+	
 	@BeforeMethod
 	public BasePage LaunchApplication() {
 		driver=initializeDriver();

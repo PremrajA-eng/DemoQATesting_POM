@@ -27,8 +27,7 @@ public class BasePage {
 		ElementsPage elementpage=new ElementsPage(driver);
 		return elementpage;
 	}
-	
-	
+		
 	
 	public void openURL() {
 		driver.get("https://demoqa.com/");

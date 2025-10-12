@@ -17,5 +17,4 @@ public class TextBoxTest extends BaseTest {
 	    String actualtext_textbox=textboxpage.confirmTextBoxPage();
 	    Assert.assertTrue(actualtext_textbox.equalsIgnoreCase("Text Box"));
 	}
-
 }

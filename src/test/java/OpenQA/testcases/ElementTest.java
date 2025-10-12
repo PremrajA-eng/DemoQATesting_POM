@@ -13,5 +13,4 @@ public class ElementTest extends BaseTest {
 	String confirmString=elementspage.confirmYouLaunchOnElementPage();
 	Assert.assertTrue(confirmString.equalsIgnoreCase("Please select an item from left to start practice."));
 	}
-
 }
