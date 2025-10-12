@@ -18,8 +18,7 @@ public class TextBoxTest2 extends BaseTest {
 	   // Assert.assertTrue(actualtext_textbox.equalsIgnoreCase("Text Box"));
 	    textboxpage.fillUserDetail();
 	    Thread.sleep(2000);
-	    Assert.assertTrue(textboxpage.confirmFillDetailSubmitted());
-	    
+	    Assert.assertTrue(textboxpage.confirmFillDetailSubmitted());	    
 	    	    
 	}
 
