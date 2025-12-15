@@ -11,6 +11,7 @@ public class TextBoxTest extends BaseTest {
 	@Test
 	public void confJumponTextBoxPage() {
 		//BasePage basepage=LaunchApplication();
+		// test
 		LaunchApplication();		
 		ElementsPage elementpage=basepage.clickonElementSection();
 		TextBoxPage textboxpage=elementpage.checkTextBoxElement();
